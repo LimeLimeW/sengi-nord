@@ -1,7 +1,0 @@
-<div class="stream flexcroll" #statusstream (scroll)="onScroll()">
-    <div class="stream__notification" *ngFor="let notification of notifications">
-        <app-notification [notification]="notification" (browseAccountEvent)="browseAccount($event)" (browseHashtagEvent)="browseHashtag($event)" (browseThreadEvent)="browseThread($event)"></app-notification>
-    </div>
-
-    <app-waiting-animation *ngIf="isLoading" class="waiting-icon"></app-waiting-animation>
-</div>
